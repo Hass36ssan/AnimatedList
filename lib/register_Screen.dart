@@ -40,7 +40,7 @@ class _Registerscreen extends State<Registerscreen> {
                     Container(
                       width: size.width,
                       height: size.height / 3.5,
-                      color: Colors.purple,
+                      color: mycolor,
                       child: const Center(
                         child: Text(
                           'Register',
@@ -117,7 +117,7 @@ class _Registerscreen extends State<Registerscreen> {
                     } else if (passcontroler.text.length < 6) {
                       return 'Password must be at lest 6 char';
                     } else if (passcontroler.text != confpasscontroler.text) {
-                      return "password doesn't ma0ch";
+                      return "password doesn't match";
                     }
                     return null;
                   },
@@ -146,7 +146,7 @@ class _Registerscreen extends State<Registerscreen> {
                     } else if (confpasscontroler.text.length < 6) {
                       return 'Password must be at lest 6 char';
                     } else if (passcontroler.text != confpasscontroler.text) {
-                      return "password doesn't ma0ch";
+                      return "password doesn't match";
                     }
                     return null;
                   },
